@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e89498b1-081d-4361-af81-7acba331ff06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial/snippets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/snippets/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/snippets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/snippets/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/snippets/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/snippets/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/snippets/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/snippets/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/snippets/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,23 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tutorial/snippets/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -42,8 +36,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tutorial/settings.py" />
         <option value="$PROJECT_DIR$/tutorial/snippets/models.py" />
+        <option value="$PROJECT_DIR$/tutorial/settings.py" />
       </list>
     </option>
   </component>
@@ -68,13 +62,12 @@
             <path>
               <item name="tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="snippets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="tutorial" type="462c0819:PsiDirectoryNode" />
               <item name="tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="snippets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -113,7 +106,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24944155" />
@@ -135,20 +127,27 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tutorial/settings.py">
+    <entry file="file://$PROJECT_DIR$/tutorial/snippets/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="60">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/snippets/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
