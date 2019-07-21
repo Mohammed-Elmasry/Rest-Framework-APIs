@@ -31,7 +31,7 @@ def snippet_details(request, pk):
     """
     try:
         snippet = Snippet.objects.get(pk)
-    except Snippet.DoesNotExist
+    except Snippet.DoesNotExist:
         return HttpResponse(status=404)
 
     if request.method == "GET":
