@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
+from rest_framework import status
 from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
 
@@ -52,4 +53,4 @@ def snippet_details(request, pk, format=None):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
     else:
-       return Response(status=status.HTTP_405_Bad_METHOD)
+       return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
