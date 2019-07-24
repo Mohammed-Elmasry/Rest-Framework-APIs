@@ -56,3 +56,23 @@ from django.http import Http404
 #        return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
+
+class SnippetList(APIView):
+    """
+    List all snippets, or create a new snippet
+    """
+
+    def get(self, request, format=None):
+        snippets = Snippet.objects.all()
+        serializer = SnippetSerializer(snippets, many=True)
+        return Response(serializer.data)
+
+    def post(selfs, request, format=None):
+        serializer = SnippetSerializer(data = request.data)
+        if serializer.is_valud()
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+
