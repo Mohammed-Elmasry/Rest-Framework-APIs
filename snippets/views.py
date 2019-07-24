@@ -1,5 +1,5 @@
 from rest_framework import status
-# from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from rest_framework.response import Response # this uses context negotiation to resolve the requested content-type
 from snippets.models import Snippet
