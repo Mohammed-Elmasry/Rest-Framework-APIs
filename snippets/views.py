@@ -115,6 +115,9 @@ class SnippetList(generics.ListCreateAPIView):
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
 
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
+
 
 # using already mixed-in mixins for retrieval, update, and delete
 class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
