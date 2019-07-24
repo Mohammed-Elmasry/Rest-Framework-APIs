@@ -20,7 +20,7 @@ class Snippet(models.Model):
     style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)
 
     owner = models.ForeignKey('auth.User', related_name='snippets', on_delete=models.CASCADE)
-    highlighted = models.TextField()
+    highlighted = models.TextField(default="<html></html>")
 
     class Meta:
         ordering = ['created']
