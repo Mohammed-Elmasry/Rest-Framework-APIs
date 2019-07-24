@@ -1,6 +1,7 @@
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework import generics
+from rest_framework.mixins import ListModelMixin
 from rest_framework.views import APIView
 from rest_framework.response import Response # this uses context negotiation to resolve the requested content-type
 from snippets.models import Snippet
@@ -68,7 +69,7 @@ from django.http import Http404
 #         serializer = SnippetSerializer(snippets, many=True)
 #         return Response(serializer.data)
 #
-#     def post(selfs, request, format=None):
+#     def post(self, request, format=None):
 #         serializer = SnippetSerializer(data = request.data)
 #         if serializer.is_valid():
 #             serializer.save()
@@ -107,7 +108,7 @@ from django.http import Http404
 #         snippet.delete()
 #         return Response(status=status.HTTP_204_NO_CONTENT)
 #
-    
+
 # using already mixed-in mixins for listing and posting
 class SnippetList(generics.ListCreateAPIView):
     queryset = Snippet.objects.all()
