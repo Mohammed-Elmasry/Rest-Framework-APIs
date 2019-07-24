@@ -69,7 +69,7 @@ class SnippetList(APIView):
 
     def post(selfs, request, format=None):
         serializer = SnippetSerializer(data = request.data)
-        if serializer.is_valud()
+        if serializer.is_valud():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -105,4 +105,3 @@ class SnippetDetail(APIView):
         snippet = self.get_object(pk)
         snippet.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-    
